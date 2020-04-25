@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <!-- 页面标题 -->
+  <title>若谷私有云API</title> 
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!-- Theme: Defaults -->
+  <link rel="stylesheet" href="themes/vue.css">
+  <style>
+    /* 修改logo图片大小 */
+    .app-name-link img {
+    height: 100px;
+    width: 150px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 刷新显示 -->
+  <div data-app id="app">加载中</div>
+    <script>
+    window.$docsify = {
+      // 直接渲染其他域名的文档
+      //basePath: 'http://guolu1976.ticp.net/docsify/',
+      //basePath:'/',
+      // homepage: "index.md", //设置家目录
+      coverpage: true,//激活封面功能。如果为true，则会从中加载_coverpage.md。
+      onlyCover: true,//网站首页只显示封面，不回滚动下滑
+      auto2top: true,//当路线改变时，滚动到屏幕的顶部
+      loadNavbar: true,//激活导航栏功能。如果为true，则会从中加载_navbar.md
+      mergeNavbar: true,//Navbar将在小屏幕上与侧边栏合并
+      loadSidebar: true,//激活侧边栏功能。如果为true，则会从中加载_sidebar.md
+      name: '若谷私有云',//添加侧边栏logo后不能正常显示
+      // logo: '/_media/logo.svg',//侧边栏logo，不能与侧边栏名字同用
+      maxLevel: 6,//最大的内容表级别。
+      subMaxLevel: 2,//在自定义边栏中添加目录（TOC）
+      
+      requestHeaders: {
+        'cache-control': 'max-age=600',
+      },
+
+      //增加搜索框
+      search: {
+            maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+            paths: 'auto',
+            placeholder: '? 关键字搜索 ',
+            noData: '? No Results! ',
+            // Headline depth, 1 - 6
+            depth: 6
+        },
+
+      // repo: 'https://code.speakin.mobi/rougu/ruogu'//Github corner 挂件
+
+    }
+
+  // 插件
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+<!--   全文搜索 -->
+  <script src="themes/search.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+  <script src="//unpkg.com/docsify-copy-code"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <!-- markdown 代码高亮显示 https://unpkg.com/prismjs/components/ -->
+  <script src="themes/prism-bash.min.js"></script>
+  <script src="themes/prism-php.min.js"></script>
+  <script src="themes/prism-markdown.min.js"></script>
+  <script src="themes/prism-python.js"></script>
+  <script src="themes/prism-go.js"></script>
+  <script src="themes/prism-java.js"></script>
+</body>
+</html>
